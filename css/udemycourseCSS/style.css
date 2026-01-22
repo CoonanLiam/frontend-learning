@@ -1,5 +1,16 @@
+/*
 p{
-    color:red;
+    color:rgb(226, 10, 10);
     font-weight:bold;
     font-size:24px;
+*/
+body{
+    background-color: aquamarine;
+}
+p,h4{
+    color:red;
+}
+
+h1{
+    color:green;
 }
