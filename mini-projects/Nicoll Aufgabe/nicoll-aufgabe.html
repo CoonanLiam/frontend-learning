@@ -1,140 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <title>
-        HTML & CSS Grundlagen </title>
+    <title>HTML & CSS Grundlagen - Refined</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="nicoll-aufgabe.css">
 </head>
 <body>
-    <h1>Einführung in HTML</h1>
-    <p>HTML or Hyper Text Markup Language is used to format and display content on Webpages and in Documents</p>
-<hr>
-    <h1>Aufbau eines HTML-Dokuments</h1>
-    <p>!DOCTYPE html sagt dem Browser dass das Dokument ein HTML5 Dokument ist. </p>
-    <p>Der head Bereich enthält informationen über die Website, aber nichts was man direkt sehen kann.</p>
-    <p>Der body Bereich enthält alle informationen die man auf der Website sehen kann.</p>
-<hr>
-    <h1>Text in HTML formatieren</h1>
-    <p><strong> strong macht es so das der Text fett gedruckt wird</strong></p>
-    <p><em>em macht den Text kursiv</em></p>
-    <p>br erzwingt einen <br> Zeilenumbruch</p>
-<hr>
-    <h1>Listen in HTML</h1>
-    <ul>
-        <li>html</li>
-        <li>head</li>
-        <li>title</li>
-        <li>body</li>
-        <li>h1 bis h6</li>
-        <li>p</li>
-        <li>a</li>
-        <li>img</li>
-        <li>ul / ol</li>
-        <li>li</li>
-        <li>br</li>
-        <li>strong / em</li>
-    </ul>
-    <ol>
-        <li>Neue Datei mit der Endung <strong>.html</strong> erstellen</li>
-        <li>!DOCTYPE html am Anfang schreiben</li>
-        <li>html-Tag öffnen</li>
-        <li>head-Bereich mit title erstellen</li>
-        <li>body-Bereich für sichtbaren Inhalt erstellen</li>
-        <li>Überschriften, Texte, Bilder oder Links einfügen</li>
-        <li>Datei speichern und im Browser öffnen</li>
-    </ol>
 
-    <p>
-        Der Unterschied zwischen <strong>ul</strong> und <strong>ol</strong> ist, <br>
-        das eine ungeordnete Liste (<strong>ul</strong>) Aufzählungspunkte ohne Reihenfolge verwendet,<br>
-        während eine geordnete Liste (<strong>ol</strong>) nummerierte Schritte in einer festen Reihenfolge darstellt.
-    </p>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#html-section">HTML</a></li>
+            <li><a href="#tabellen-section">Tabellen</a></li>
+            <li><a href="#formulare-section">Formulare</a></li>
+            <li><a href="#css-section">CSS & Box-Modell</a></li>
+        </ul>
+    </nav>
 
-    
-<hr>
-    <h1>Links und Bilder</h1>
-    <p>Der a-Tag wird verwendet, um Links zu erstellen.</p>
-    <a href="https://www.w3schools.com/html/default.asp" target="_blank">
-    HTML Tutorial
-    </a>
-    <p>Der img-Tag zeigt Bilder auf einer Website an. Wenn er innerhalb eines a-Tags ist.</p>
+    <main class="wrapper">
+        
+        <section id="html-section">
+            <h1>Einführung in HTML</h1>
+            <p>HTML (Hyper Text Markup Language) ist das Skelett jeder Webseite. Es gibt dem Inhalt eine logische Struktur.</p>
+            
+            <hr>
+            
+            <h2>Aufbau eines HTML-Dokuments</h2>
+            <p><code>!DOCTYPE html</code> definiert den Dokumenttyp als HTML5.</p>
+            <p>Der <strong>head</strong>-Bereich enthält unsichtbare Metadaten, während der <strong>body</strong> alles Sichtbare beherbergt.</p>
+            
+            <hr>
+            
+            <h2>Wichtige Tags</h2>
+            <ul>
+                <li><code>&lt;strong&gt;</code> macht Text <strong>fett</strong>.</li>
+                <li><code>&lt;em&gt;</code> macht Text <em>kursiv</em>.</li>
+                <li><code>&lt;br&gt;</code> erzwingt einen Zeilenumbruch.</li>
+            </ul>
+        </section>
 
-        <a href="https://www.w3schools.com/html/default.asp" target="_blank">
-        <img width = "100" length = "100" src="../../images/W3School.png">
-        </a>    
-<hr>
-    <h1>Tabellen in HTML</h1>
-    <p>Tabellen werden in HTML dafür genutzt um Daten Strukturiert und Übersichtlich Darzustellen.</p>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Tag</th>
-                <th>Bedeutung </th>
-                <th>Beispiel </th>
-            </tr>
-        </thead>
+        <hr>
 
-        <tbody>
-            <tr>
-                <td>em-Tag</td>
-                <td>Macht den Text innerhalb Kursiv</td>
-                <td><em>Das Beispiel </em></td>
-            </tr>
-        </tbody>
-    </table>
-<hr>
-    <h1>Formulare in HTML</h1>
-    <p>Formulare in HTML sind vielseitig Anwendbar so zB. für Logins.</p>
-    <form>
-        <label for="name">First name:</label><br>
-        <input type="text" id="name" name="name"><br>
+        <section id="tabellen-section">
+            <h1>Tabellen in HTML</h1>
+            <p>Tabellen ordnen Daten in Zeilen und Spalten.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Bedeutung</th>
+                        <th>Beispiel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>em-Tag</td>
+                        <td>Kursivschrift</td>
+                        <td><em>Beispiel</em></td>
+                    </tr>
+                    <tr>
+                        <td>strong-Tag</td>
+                        <td>Fettschrift</td>
+                        <td><strong>Beispiel</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <label for="E-Mail">E-Mail:</label><br>
-        <input type="text" id="E-Mail" E-Mail="E-Mail"><br>
+        <hr>
 
-        <label for="Nachricht">nachricht:</label><br>
-        <input type="Text" id="Nachricht" Nachricht="Nachricht"><br>
+        <section id="formulare-section">
+            <h1>Formulare</h1>
+            <p>Interaktive Eingabefelder für Nutzeranfragen.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Vorname:</label>
+                    <input type="text" id="name" name="name" placeholder="Dein Name...">
+                </div>
 
-        <button type="submit" class="submit-btn">Submit</button>
-    </form>
-<hr>
-        <h1>Einführung in CSS</h1>
-    <p>
-        CSS wird verwendet, um das Aussehen und Layout dieser Inhalte zu gestalten. <br>
-        Es legt fest, wie die HTML-Elemente dargestellt werden, zum Beispiel Farben, Schriftarten, Größen, Abstände, Positionen oder Animationen. <br>
-        CSS macht Webseiten übersichtlich, ansprechend und sorgt dafür, dass sie auf verschiedenen Bildschirmgrößen gut aussehen. <br>
-    </p>  
-    <p>
-        Eine CSS-Regel legt fest, wie ein HTML-Element gestylt werden soll. Sie besteht aus einem Selektor und Deklarationen (Eigenschaften + Werte).<br>
-        Selektoren sind die Teile der CSS-Regel, die angeben, welche HTML-Elemente betroffen sind.<br>
-        Sie sagen also: „Dieses oder diese Elemente sollen so aussehen.“
-    </p>
-<hr>
-    <h1>Klassen und IDs</h1>
-    <p id="Paragraph">
-        HTML bestimmt, was auf der Webseite steht.<br>
-        CSS bestimmt, wie diese Inhalte aussehen.
-    </p>
-<hr>    
-    <h1>Das CSS-Box-Modell</h1>
-    <p>
-        <h2>Margin</h2>
-        Margin ist der Außenabstand eines Elements er bestimmt, wie viel Platz zwischen diesem Element und anderen Elementen ist. <br>
-        <h2>Padding</h2>
-        Padding ist der Innenabstand er sorgt für Platz zwischen dem Inhalt und dem Rand des Elements.<br>
-        <h2>Border</h2>
-        Border ist der Rahmen um ein Element er liegt zwischen Padding und Margin und kann Farbe, Dicke und Stil haben.<br>
-    </p>
-    <div class="container">
-        Das ist ein Inhaltscontainer
-    </div>
-    <div class="textbox">
-    Hover Effekt-Box
-    </div>
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email" placeholder="name@beispiel.de">
+                </div>
 
+                <div class="form-group">
+                    <label for="nachricht">Nachricht:</label>
+                    <textarea id="nachricht" name="nachricht" rows="4" placeholder="Deine Nachricht an uns..."></textarea>
+                </div>
 
+                <button type="submit" class="submit-btn">Absenden</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="css-section">
+            <h1>Einführung in CSS</h1>
+            <p>CSS bestimmt das Design. Ein zentrales Konzept ist das <strong>Box-Modell</strong>.</p>
+            
+            
+
+            <div class="visual-box-model">
+                Inhalt (Content)
+                <div class="label-info">Ich habe Padding, Border und Margin!</div>
+            </div>
+
+            <div class="textbox">
+                Hover-Effekt Box
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="best-practices">
+            <h1>Best Practices</h1>
+            <div class="practice-box">
+                <h3>Saubere Einrückung</h3>
+                <p>Macht den Code für Menschen lesbar.</p>
+                
+                <h3>Trennung von HTML & CSS</h3>
+                <p>Struktur und Design bleiben sauber getrennt.</p>
+                
+                <h3>Sprechende Klassennamen</h3>
+                <p>Nutze <code>.submit-btn</code> statt <code>.knopf1</code>.</p>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 </html>
