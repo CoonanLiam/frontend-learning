@@ -11,6 +11,7 @@ and how user interfaces interact with underlying systems.
 ## Topics Covered
 - HTML fundamentals
 - CSS basics & layout
+- Javascript basics
 - Typescript basics
 - Small UI experiments and mini-projects
 
@@ -19,7 +20,4 @@ and how user interfaces interact with underlying systems.
 - Focus on clarity and maintainability
 - Continuous improvement and documentation
 
-## Long-Term Goal
-Build a strong technical foundation to better collaborate with engineers
-and move towards system-oriented roles such as Technical Operations
-or Program Management in the future.
+
